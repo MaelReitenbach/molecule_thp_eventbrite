@@ -1,0 +1,16 @@
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+.imagedufond1 {
+	background-image: url(https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg);
+	background-size: cover;
+}
+
+.imagedufond2 {
+	background-image: url(https://c3.thejournal.ie/media/2017/09/6361597972289366971220904497_tumblr_mkxjvjxft71s5drvyo3_1280-752x501.png);
+	background-size: cover;
+}

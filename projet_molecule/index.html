@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<head>
+	<title></title>
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-4HfFay3AYJnEmbgRzxYWJk/Ka5jIimhB/Fssk7NGT9Tj3rkEChpSxLK0btOGzf2I" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>	
+<body>
+	
+<!-- NAVBAR -->
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Navbar<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+	
+
+<br><br><h1 class="text-center">Formulaire d'inscription
+</h1><br><br>
+
+
+ <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+
+        <form>
+
+          <div class="row">
+            <div class="col">
+              <br>
+              <label>First name</label>
+              <input type="text" class="form-control" placeholder="Prénom">
+            </div>
+          </div>
+
+
+          <div class="row">
+          	<div class="col">
+          	  <br>	
+              <label>Last name</label>
+              <input type="text" class="form-control" placeholder="Nom">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <br>
+              <label>Email</label>
+              <input type="text" class="form-control" placeholder="someone@example.com">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <br>
+              <label>Password</label>
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+          <div class="row">
+          <div class="col">
+          	<br>
+              <label>Confirm password</label>
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+            </div>
+
+         <br>
+
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+<br><br><br><h1 class="text-center">Formulaire de connexion
+</h1><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <br><br><br>
+      <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="KBB8b2YLXG1F9/puWR55dQwQtv9MHnDDEwhQsi5CWOz4rbc5j7VbbMOlub43g6NgiO2NEbG9Fm/1l8sHH9FXfA==">
+      <h1 class="h3 mb-3 font-weight-normal text-center">Connexion</h1>
+      
+      <br>
+
+      <div class="form-group">
+        <label for="user_email">Email</label><br>
+        <input autofocus="autofocus" autocomplete="email" class="form-control" type="email" value="" name="user[email]" id="user_email">
+      </div>
+      <div class="form-group">
+        <label for="user_password">Password</label>
+        <input autocomplete="new-password" class="form-control" type="password" name="user[password]" id="user_password">
+      </div>
+      <div class="field">
+        <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+        <label for="user_remember_me">Remember me</label>
+      </div>
+      <div class="actions mt-5">
+        <input type="submit" name="commit" value="Log in" class="btn btn-lg btn-primary btn-block">
+      </div>
+</form>      
+<br>
+  <a href="">Sign up</a><br>
+
+  <a href="">Forgot your password?</a><br>
+
+  <br>
+    </div>
+  </div>
+</div>
+
+<br><br><h1 class="text-center">Mdp oublié
+</h1><br><br>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+    	<br><br><br>
+
+<h1>Mot de passe oublié ?</h1>
+<br>
+
+<form class="new_user" id="new_user" action="/users/password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ZtIYa7m/wnmD33yR5YZeFwE1XiuwTJ+ilQ3MDhZSxa6OWLdmBNLlArx21CrxUTl+iwyddgcgP5LOcbnNca31GA==">
+  
+
+  <div class="field">
+    <label for="user_email">Email</label><br>
+    <input autofocus="autofocus" autocomplete="email" type="email" value="" name="user[email]" id="user_email">
+  </div>
+
+<br>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Recevoir un mail pour changer de mot de passe" class="btn btn-secondary" data-disable-with="Recevoir un mail pour changer de mot de passe">
+  </div>
+</form>
+
+<br>
+
+  <a href="/users/sign_in">Log in</a><br>
+
+  <a href="/users/sign_up">Sign up</a><br>
+  
+</div></div></div>
+
+
+<br><br><br><h1 class="text-center">Changer de mdp
+</h1><br><br>
+
+<div class="container">
+	  <div class="row">
+    <div class="col-md-6 offset-md-3">
+
+<form class="edit_user">
+<div class="field">
+        <label for="user_password">Password</label> <i>(leave blank if you don't want to change it)</i><br>
+        <input autocomplete="new-password" type="password" name="user[password]" id="user_password">
+        <br>
+        <em>6 characters minimum</em>
+</div>
+
+<div class="field">
+        <label for="user_password_confirmation">Password confirmation</label><br>
+        <input autocomplete="new-password" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+</div>
+
+<div class="field">
+
+        <label for="user_current_password">Current password</label> <i>(we need your current password to confirm your changes)</i><br>
+        <input autocomplete="current-password" type="password" name="user[current_password]" id="user_current_password">
+
+        <br><br>
+        <input type="submit" name="commit" value="Confirmer les modifications" class="btn btn-lg btn-secondary btn-block" data-disable-with="Confirmer les modifications">
+      
+</div>
+</form>
+</div>
+</div>
+</div>
+<br><br>
+
+
+<br><br><br><h1 class="text-center">Grand jumbotron
+</h1><br><br>
+
+
+<div class="jumbotron imagedufond1">
+        <div class="jumb-content">
+          <h1>BLAHBLAHBLAH</h1>
+          <h3>okokokokokokokoko kok ok ok ok ok ok okokokok </h3><br>
+          <button type="submit" class="btn btn-primary btn-lg">ahahahahaha</button>
+        </div>
+</div>
+
+<br><br><br><h1 class="text-center">Petit jumbotron
+</h1><br><br>
+
+<div class="jumbotron-small imagedufond2">
+        <div class="jumb-content">
+        	<br>
+        	<br>
+          <h2 class="text-light">EEEEHHHHHHHHH</h2>
+          <h4 class="text-light">aaaaaaaaaaa aaa a a a aaa aaaaaaaaaaaaaaaaa</h4><br>
+          <button type="submit" class="btn btn-secondary btn-lg">hhhhhhhhh</button>
+        </div>
+</div>
+
+
+<br><br><br><br><h1 class="text-center">Cartes
+</h1><br><br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+<div class="card mb-3">
+  <h3 class="card-header">Title</h3>
+  <img style="height: 200px; width: 100%; display: block;" src="https://media.licdn.com/dms/image/C4E0BAQFaTRiFFRRG9Q/company-logo_200_200/0?e=2159024400&v=beta&t=AFkjw3zRf29Tk2clJ80NvA8YpWj2dnWEVOG8DK5dfb0">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date :</li>
+    <li class="list-group-item">Place :</li>
+    <li class="list-group-item">Description :</li>
+  </ul>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary btn-lg"> "Learn more"</button>
+      </div>
+</div>
+</div>
+</div>
+</div>
+
+<br><br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-4">
+<div class="card border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-header">Nom de la ville</div>
+  <div class="card-body">
+    <h4 class="card-title">Nom de l'événement</h4>
+    <p class="card-text">Description ejejsljfd kdfhlksz</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<br><br><br><br><h1 class="text-center">Listes
+</h1><br><br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">Title</th>
+      <th scope="col">Title</th>
+      <th scope="col">Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <th scope="row">Dates</th>
+      <td>Date</td>
+      <td>Date</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <th scope="row">Places</th>
+      <td>Place</td>
+      <td>Place</td>
+      <td>Place</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">Descriptions</th>
+      <td>About</td>
+      <td>About</td>
+      <td>About</td>
+    </tr>
+   </tbody>
+  </table>  
+<br><br><br><br><br>
+
+<div class="row">
+
+
+<div class="card mb-3">
+  <h3 class="card-header">Title</h3>
+  <img style="height: 200px; width: 100%; display: block;" src="https://media.licdn.com/dms/image/C4E0BAQFaTRiFFRRG9Q/company-logo_200_200/0?e=2159024400&v=beta&t=AFkjw3zRf29Tk2clJ80NvA8YpWj2dnWEVOG8DK5dfb0">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date :</li>
+    <li class="list-group-item">Place :</li>
+    <li class="list-group-item">Description :</li>
+  </ul>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary btn-lg"> "Learn more"</button>
+      </div>
+</div>
+
+
+
+<div class="card mb-3">
+  <h3 class="card-header">Title</h3>
+  <img style="height: 200px; width: 100%; display: block;" src="https://media.licdn.com/dms/image/C4E0BAQFaTRiFFRRG9Q/company-logo_200_200/0?e=2159024400&v=beta&t=AFkjw3zRf29Tk2clJ80NvA8YpWj2dnWEVOG8DK5dfb0">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date :</li>
+    <li class="list-group-item">Place :</li>
+    <li class="list-group-item">Description :</li>
+  </ul>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary btn-lg"> "Learn more"</button>
+      </div>
+</div>
+
+
+
+<div class="card mb-3">
+  <h3 class="card-header">Title</h3>
+  <img style="height: 200px; width: 100%; display: block;" src="https://media.licdn.com/dms/image/C4E0BAQFaTRiFFRRG9Q/company-logo_200_200/0?e=2159024400&v=beta&t=AFkjw3zRf29Tk2clJ80NvA8YpWj2dnWEVOG8DK5dfb0">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date :</li>
+    <li class="list-group-item">Place :</li>
+    <li class="list-group-item">Description :</li>
+  </ul>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary btn-lg"> "Learn more"</button>
+      </div>
+
+</div>
+
+<div class="card mb-3">
+  <h3 class="card-header">Title</h3>
+  <img style="height: 200px; width: 100%; display: block;" src="https://media.licdn.com/dms/image/C4E0BAQFaTRiFFRRG9Q/company-logo_200_200/0?e=2159024400&v=beta&t=AFkjw3zRf29Tk2clJ80NvA8YpWj2dnWEVOG8DK5dfb0">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date :</li>
+    <li class="list-group-item">Place :</li>
+    <li class="list-group-item">Description :</li>
+  </ul>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary btn-lg"> "Learn more"</button>
+      </div>
+
+</div>
+
+<div class="card mb-3">
+  <h3 class="card-header">Title</h3>
+  <img style="height: 200px; width: 100%; display: block;" src="https://media.licdn.com/dms/image/C4E0BAQFaTRiFFRRG9Q/company-logo_200_200/0?e=2159024400&v=beta&t=AFkjw3zRf29Tk2clJ80NvA8YpWj2dnWEVOG8DK5dfb0">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date :</li>
+    <li class="list-group-item">Place :</li>
+    <li class="list-group-item">Description :</li>
+  </ul>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary btn-lg"> "Learn more"</button>
+      </div>
+
+</div>
+
+<div class="card mb-3">
+  <h3 class="card-header">Title</h3>
+  <img style="height: 200px; width: 100%; display: block;" src="https://media.licdn.com/dms/image/C4E0BAQFaTRiFFRRG9Q/company-logo_200_200/0?e=2159024400&v=beta&t=AFkjw3zRf29Tk2clJ80NvA8YpWj2dnWEVOG8DK5dfb0">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date :</li>
+    <li class="list-group-item">Place :</li>
+    <li class="list-group-item">Description :</li>
+  </ul>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary btn-lg"> "Learn more"</button>
+      </div>
+
+</div>
+
+
+<div class="card mb-3">
+  <h3 class="card-header">Title</h3>
+  <img style="height: 200px; width: 100%; display: block;" src="https://media.licdn.com/dms/image/C4E0BAQFaTRiFFRRG9Q/company-logo_200_200/0?e=2159024400&v=beta&t=AFkjw3zRf29Tk2clJ80NvA8YpWj2dnWEVOG8DK5dfb0">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Date :</li>
+    <li class="list-group-item">Place :</li>
+    <li class="list-group-item">Description :</li>
+  </ul>
+      <div class="card-footer text-center">
+        <button class="btn btn-secondary btn-lg"> "Learn more"</button>
+      </div>
+
+</div>
+
+</div>
+
+<br><br><br><br><h1 class="text-center">Commentaire
+</h1><br><br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+  <div class="card mb-3">
+  <h3 class="card-header">Nom de l'auteur</h3>
+  <div class="card-body">
+    <p class="card-text">C'EST LE CONTENU AHDFJFDJFDOPPPPPPPPPPPPPPPPPPPPPPnon</p>
+  </div>
+  <div class="card-body">
+    <a href="#" class="card-link">Répondre</a>
+  </div>
+  <div class="card-footer text-muted">
+    Date d'envoi.
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+    <div class="col"style="max-width: 600px;">
+      <label class="text-center">Poster un commentaire</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+      <button type="submit" class="btn btn-secondary btn-block">Publier</button>
+    </div>
+</div>
+</div>
+</div>
+<br><br><br>
+<!-- FOOTER -->
+
+<footer>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary footer">
+  
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Footer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Legalities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</footer>
+</body>

@@ -1,0 +1,172 @@
+<br><br><h1 class="text-center">Formulaire d'inscription
+</h1><br><br>
+
+
+ <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+
+        <form>
+
+          <div class="row">
+            <div class="col">
+              <br>
+              <label>First name</label>
+              <input type="text" class="form-control" placeholder="Prénom">
+            </div>
+          </div>
+
+
+          <div class="row">
+          	<div class="col">
+          	  <br>	
+              <label>Last name</label>
+              <input type="text" class="form-control" placeholder="Nom">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <br>
+              <label>Email</label>
+              <input type="text" class="form-control" placeholder="someone@example.com">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <br>
+              <label>Password</label>
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+          </div>
+          <div class="row">
+          <div class="col">
+          	<br>
+              <label>Confirm password</label>
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+            </div>
+
+         <br>
+
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+<br><br><br><h1 class="text-center">Formulaire de connexion
+</h1><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <br><br><br>
+      <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="KBB8b2YLXG1F9/puWR55dQwQtv9MHnDDEwhQsi5CWOz4rbc5j7VbbMOlub43g6NgiO2NEbG9Fm/1l8sHH9FXfA==">
+      <h1 class="h3 mb-3 font-weight-normal text-center">Connexion</h1>
+      
+      <br>
+
+      <div class="form-group">
+        <label for="user_email">Email</label><br>
+        <input autofocus="autofocus" autocomplete="email" class="form-control" type="email" value="" name="user[email]" id="user_email">
+      </div>
+      <div class="form-group">
+        <label for="user_password">Password</label>
+        <input autocomplete="new-password" class="form-control" type="password" name="user[password]" id="user_password">
+      </div>
+      <div class="field">
+        <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+        <label for="user_remember_me">Remember me</label>
+      </div>
+      <div class="actions mt-5">
+        <input type="submit" name="commit" value="Log in" class="btn btn-lg btn-primary btn-block">
+      </div>
+</form>      
+<br>
+  <a href="">Sign up</a><br>
+
+  <a href="">Forgot your password?</a><br>
+
+  <br>
+    </div>
+  </div>
+</div>
+
+<br><br><h1 class="text-center">Mdp oublié
+</h1><br><br>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+    	<br><br><br>
+
+<h1>Mot de passe oublié ?</h1>
+<br>
+
+<form class="new_user" id="new_user" action="/users/password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="ZtIYa7m/wnmD33yR5YZeFwE1XiuwTJ+ilQ3MDhZSxa6OWLdmBNLlArx21CrxUTl+iwyddgcgP5LOcbnNca31GA==">
+  
+
+  <div class="field">
+    <label for="user_email">Email</label><br>
+    <input autofocus="autofocus" autocomplete="email" type="email" value="" name="user[email]" id="user_email">
+  </div>
+
+<br>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Recevoir un mail pour changer de mot de passe" class="btn btn-secondary" data-disable-with="Recevoir un mail pour changer de mot de passe">
+  </div>
+</form>
+
+<br>
+
+  <a href="/users/sign_in">Log in</a><br>
+
+  <a href="/users/sign_up">Sign up</a><br>
+  
+</div></div></div>
+
+
+<br><br><br><h1 class="text-center">Changer de mdp
+</h1><br><br>
+
+<div class="container">
+	  <div class="row">
+    <div class="col-md-6 offset-md-3">
+
+<form class="edit_user">
+<div class="field">
+        <label for="user_password">Password</label> <i>(leave blank if you don't want to change it)</i><br>
+        <input autocomplete="new-password" type="password" name="user[password]" id="user_password">
+        <br>
+        <em>6 characters minimum</em>
+</div>
+
+<div class="field">
+        <label for="user_password_confirmation">Password confirmation</label><br>
+        <input autocomplete="new-password" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+</div>
+
+<div class="field">
+
+        <label for="user_current_password">Current password</label> <i>(we need your current password to confirm your changes)</i><br>
+        <input autocomplete="current-password" type="password" name="user[current_password]" id="user_current_password">
+
+        <br><br>
+        <input type="submit" name="commit" value="Confirmer les modifications" class="btn btn-lg btn-secondary btn-block" data-disable-with="Confirmer les modifications">
+      
+</div>
+</form>
+</div>
+</div>
+</div>
+<br><br>
